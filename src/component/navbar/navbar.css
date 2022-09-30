@@ -1,0 +1,28 @@
+.navbar{
+    margin:0 auto ;
+    max-width: 950px; 
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    padding-top:5rem;
+    font-family: 'Montserrat';
+}
+.navbar-brand{
+font-style: normal;
+font-weight: 900;
+font-size: 25px;
+color: #FFFFFF;
+text-decoration: none;
+}
+.nav-item{
+    display: flex;
+    justify-content:space-between;
+    width: 90px;
+}
+.nav-item a{
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+color: #FFFFFF;
+text-decoration: none;
+}
