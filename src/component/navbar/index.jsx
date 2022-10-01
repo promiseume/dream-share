@@ -7,7 +7,7 @@ export default function Nav() {
         <a className="navbar-brand" href='/'>DREAMSHARE</a>
         <div className='nav-item'>
             <a href='/'>Log in</a>
-            <a href='/'>Sign up</a>
+            <a className='signup' href='/'>Sign up</a>
         </div>
     </nav>
   )

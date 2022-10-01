@@ -15,37 +15,42 @@ export default function HolidayIdeas() {
       <div className="holiday-image">
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={PersonRunning} alt="" />
+          <img src={PersonRunning} alt="Sports and Activity" />
           <p>Sports and Activity</p>
         </div>
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={Sunset} alt="" />
+          <img src={Sunset} alt="Wellness and Health" />
           <p>Wellness and Health</p>
         </div>
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={MountainClimb} alt="" />
+          <img src={MountainClimb} alt="Sports" />
+          <p>Extreme Sports and Expeditions</p>
         </div>
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={Card} alt="" />
+          <img src={Card} alt="Games" />
+          <p>Games</p>
         </div>
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={Stadium} alt="" />
+          <img src={Stadium} alt="Culture and Education" />
+          <p>Culture and Education</p>
         </div>
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={Massage} alt="" />
+          <img src={Massage} alt="Relaxation" />
+          <p>Enjoyment and Relaxation</p>
         </div>
         <div className="holiday-content">
           <div className="opaque"></div>
-          <img src={Tour} alt="" />
+          <img src={Tour} alt="Travelling" />
+          <p>Travelling</p>
         </div>
       </div>
       <div className="search-patner">
-        <h3>Crate your holiday activity</h3>
+        <h3>Creat your holiday activity</h3>
         <p>Hi! What are your holiday interests?</p>
         <div className="search-form">
           <input type="text" placeholder="Enter your interest" />

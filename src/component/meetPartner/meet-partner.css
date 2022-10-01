@@ -9,6 +9,7 @@
   font-weight: 700;
   font-size: 22px;
   color: #444444;
+  margin-bottom:2rem;
 }
 
 .meet-partner button {
@@ -21,15 +22,25 @@
   border-radius: 40px;
   padding: 5px 12px 5px 12px;
 }
-
+.meet-partner button:hover{
+  opacity: 0.8;
+}
 .celebrity-div {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+  display: grid;
+  grid-template-columns:repeat(5,auto);
+}
+.celebrity img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
 }
 
-.celebrity img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+@media(max-width:961px){
+  .celebrity-div {
+    grid-template-columns:repeat(2,auto);
+   justify-content: center;
+   align-content: space-between;
+    /* margin:0 auto ; */
+    max-width:8000px; 
+ }
 }

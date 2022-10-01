@@ -1,6 +1,7 @@
 footer{
     display: flex;
     justify-content: space-between;
+    margin-top: 6rem;
 }
 .dream-logo h2{
  font-family: 'Montserrat';
@@ -35,6 +36,9 @@ font-style: normal;
 font-weight: 300;
 font-size: 16px;
 color: #999999;
+}
+.about-company ul li:hover{
+    border-bottom: 3px solid #FF4E50;
 }
 .designer p{
     font-family: 'Montserrat';

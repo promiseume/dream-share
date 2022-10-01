@@ -17,7 +17,7 @@ text-decoration: none;
 .nav-item{
     display: flex;
     justify-content:space-between;
-    width: 90px;
+    width:140px;
 }
 .nav-item a{
 font-style: normal;
@@ -25,4 +25,25 @@ font-weight: 500;
 font-size: 19px;
 color: #FFFFFF;
 text-decoration: none;
+white-space: nowrap;
+padding: 0 15px;
+}
+.nav-item a:hover{
+    color:#FF4E50 ;
+}
+.nav-item .signup{
+    border-radius:10px;
+    border:2px solid #FFFFFF;
+}
+.nav-item .signup:hover{
+    border:2px solid #FF4E50;
+}
+@media(max-width:961px){
+    .navbar{
+        margin:0;
+        max-width:95%; 
+        padding:2rem;
+        width: 100%;
+    }
+
 }
