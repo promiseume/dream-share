@@ -28,7 +28,8 @@ export default function MeetPartner() {
         return (
           <div className="celebrity" key={celebrity.id}>
             <img src={celebrity.image} alt={celebrity.name} />
-            <p>{celebrity.name}</p>
+            <h2>{celebrity.name}</h2>
+            <p>{celebrity.about}</p>
           </div>
         );
       })}

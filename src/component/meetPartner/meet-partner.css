@@ -30,9 +30,11 @@
   grid-template-columns:repeat(5,auto);
 }
 .celebrity img {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  transition: all ease 500ms;
+  border: 1px solid #ffff;
 }
 
 @media(max-width:961px){
