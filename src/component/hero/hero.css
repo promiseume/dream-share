@@ -1,32 +1,40 @@
 .hero-img {
     background-image: url('../images/Background.png');
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    height: 100vh;
     background-size: cover;
 }
-.hero-header{
+
+.hero-brand {
+    display: none
+}
+
+.hero-header {
     text-align: center;
-    padding:8rem 28rem;
+    padding: 7rem 20rem;
 }
-.hero-header h1{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 52px;
-color: #FFFFFF;
+
+.hero-header h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    color: #FFFFFF;
 }
-.hero-header p{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 24px;
-color: #F7F3F2;
-padding-top: 20px;
+
+.hero-header p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #F7F3F2;
+    padding-top: 20px;
 }
-.hero-header button{
+
+.hero-header button {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -36,18 +44,47 @@ padding-top: 20px;
     border-radius: 40px;
     border: none;
     padding: 15px;
-    margin-top:35px;
+    margin-top: 35px;
 }
-.hero-header button:hover{
+
+.hero-header button:hover {
     opacity: 0.9;
 }
-@media(max-width:961px){
-    .hero-header{
-        padding:1rem 2rem;
+
+@media(max-width:961px) {
+    .hero-header {
+        padding: 15rem 2rem;
     }
+
     .hero-img {
         margin: 0;
         padding: 0;
         width: 100%;
     }
-  }
+}
+
+@media(max-width:730px) {
+    .hero-header h1 {
+        font-size: 30px;
+    }
+
+    .hero-header {
+        padding: 9rem 1.2rem;
+    }
+
+    .hero-brand {
+        display: block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        color: #FFFFFF;
+        padding-bottom: 2rem;
+    }
+}
+
+@media(max-width:1024px) {
+    .hero-header {
+        padding: 12rem 1.2rem;
+    }
+}

@@ -1,11 +1,17 @@
 .holiday-ideas {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
+
 .holiday-image {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.holiday-content:hover {
+  opacity: 0.8;
+}
+
 .holiday-ideas h3 {
   text-align: center;
   font-family: "Montserrat";
@@ -15,13 +21,17 @@
   color: #444444;
   padding: 2rem 0;
 }
+
 .holiday-content {
   height: 100%;
   position: relative;
 }
+
 .holiday-content img {
   height: 100%;
+  width: 100%;
 }
+
 .holiday-content .opaque {
   position: absolute;
   width: 100%;
@@ -29,6 +39,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 5;
 }
+
 .holiday-content p {
   position: absolute;
   top: 45%;
@@ -37,14 +48,16 @@
   padding: 1rem;
   z-index: 7;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
 }
+
 .search-patner {
-  margin-top:3rem;
+  margin-top: 3rem;
 }
+
 .search-patner button {
   background: #ff4e50;
   border-radius: 40px;
@@ -52,23 +65,27 @@ color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  padding: 7px 17px 7px 17px;
+  padding: 7px 17px;
   color: #ffffff;
   border: none;
   margin-left: 10px;
   text-align: center;
 }
-.search-patner button:hover{
+
+.search-patner button:hover {
   opacity: 0.9;
 }
-.search-form{
+
+.search-form {
   display: flex;
-  height:20px;
+  height: 20px;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top:2rem;
+  margin-top: 2rem;
+  flex-basis: 33.333333%
 }
+
 .search-patner input[type="text"] {
   padding: 7px;
   margin: 8px 0;
@@ -76,8 +93,9 @@ color: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
   border-radius: 3px;
   outline: none;
-  width:230px;
+  width: 230px;
 }
+
 .search-patner p {
   font-family: "Roboto";
   font-style: normal;
@@ -86,9 +104,78 @@ color: #FFFFFF;
   text-align: center;
   color: #666666;
 }
-@media(max-width:961px){
-  .holiday-content img {
+
+@media(max-width:961px) {
+  .holiday-ideas {
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+  }
+
+  .holiday-content {
+    width: 240px;
     height: 100%;
-    width:236px;
+  }
+
+  .holiday-img {
+    flex-grow: 2;
+    width: 330px;
+    height: 100%;
+  }
+
+  .holiday-content p {
+    left: 7%;
   }
 }
+
+@media(max-width:730px) {
+  .holiday-image {
+    display: grid;
+    justify-content: center;
+  }
+
+  .holiday-content {
+    width: 99%;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .holiday-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-form {
+    display: grid;
+    gap: 1px 0;
+  }
+
+  .search-patner input[type="text"] {
+    width: 350px;
+    padding: 10px;
+  }
+
+  .holiday-content .opaque {
+    width: 95%;
+    height: 230px;
+  }
+
+  .search-patner {
+    margin-top: 1rem;
+  }
+
+  .search-patner button {
+    padding: 10px 17px;
+    margin: 0 20px;
+  }
+
+  .holiday-ideas h3 {
+    padding: 1rem 0;
+  }
+
+  .games p {
+    left: 30%;
+  }
+}
+
+/* @media screen and (min-width: 1500px) */

@@ -1,50 +1,118 @@
-footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6rem;
-}
-.dream-logo h2{
- font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-color: #FF4E50;
+.page-line {
+    background-color: #FF4E50;
+    height: 2px;
+    margin: 4rem 0;
 }
 
-.about-company p{
+footer {
+    display: grid;
+    margin-top: 6rem;
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 15px 0;
+    grid-template-columns: auto auto auto auto;
+}
+
+.dream-logo h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FF4E50;
+}
+
+.designer {
+    grid-column: 5/ span 1;
+}
+
+.about-company p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     color: #444444;
 }
-.partner p{
+
+.partner p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     color: #444444;
 }
-.about-company ul{
+
+.about-company ul {
     padding: 0;
-    margin:0;
+    margin: 0;
     list-style-type: none;
 }
-.about-company ul li{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-color: #999999;
+
+.about-company ul li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #999999;
 }
-.about-company ul li:hover{
-    border-bottom: 3px solid #FF4E50;
+
+.about-company ul li:hover {
+    opacity: 0.8;
 }
-.designer p{
+
+.designer p {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 1px;
-color: #CCCCCC;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #CCCCCC;
+}
+
+@media(max-width:961px) {
+    .designer {
+        grid-column: auto;
+    }
+    footer{
+        padding: 0 2px;
+    }
+}
+
+@media(max-width:730px) {
+    footer {
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .about-company ul li {
+        padding: 0 5px;
+    }
+
+    .about-company ul {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer h2 {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer p {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .designer {
+        text-align: center;
+    }
+
+    .page-line {
+        margin: 4rem 0 0 0;
+    }
 }

@@ -4,18 +4,18 @@ import celebs from "../celebrity.js";
 
 export default function MeetPartner() {
   const [start, setStart] = useState(0);
-  const [end, setEnd] = useState(5);
-  const [celebrities, setCelebrities] = useState(celebs.slice(start, end))
+  const [end, setEnd] = useState(4);
+  const [celebrities, setCelebrities] = useState(celebs.slice(start, end));
 
   const handleClick = () => {
-    if (start == 15) {
+    if (start == 16) {
       setStart(0);
-      setEnd(5);
-      setCelebrities(celebs.slice(start, end))
+      setEnd(4);
+      setCelebrities(celebs.slice(start, end));
     } else {
-      setStart((prev) => prev + 5);
-      setEnd((prev) => prev + 5);
-      setCelebrities(celebs.slice(start, end))
+      setStart((prev) => prev + 4);
+      setEnd((prev) => prev + 4);
+      setCelebrities(celebs.slice(start, end));
     }
   };
 
@@ -23,18 +23,24 @@ export default function MeetPartner() {
   return (
     <section className="meet-partner">
       <h3>Meet a partner for your best holiday</h3>
-       <div className='celebrity-div'>
-      {celebrities.map((celebrity) => {
-        return (
-          <div className="celebrity" key={celebrity.id}>
-            <img src={celebrity.image} alt={celebrity.name} />
-            <h2>{celebrity.name}</h2>
-            <p>{celebrity.about}</p>
-          </div>
-        );
-      })}
+      <div className="celebrity-div">
+        {celebrities.map((celebrity) => {
+          return (
+            <div className="celebrity" key={celebrity.id}>
+              {celebrity.image ? (
+                <img src={celebrity.image} alt={celebrity.name} />
+              ) : (
+                <div className="loading-img">{celebrity.name}</div>
+              )}
+              <h2>{celebrity.name}</h2>
+              <p>{celebrity.about}</p>
+            </div>
+          );
+        })}
       </div>
-      <button onClick={handleClick}>See other partners</button>
+      <div className="view-more-btn">
+        <button onClick={handleClick}>See other partners</button>
+      </div>
     </section>
   );
 }

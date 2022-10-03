@@ -1,5 +1,5 @@
 .meet-partner {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .meet-partner h3 {
@@ -9,9 +9,13 @@
   font-weight: 700;
   font-size: 22px;
   color: #444444;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
-
+.view-more-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .meet-partner button {
   font-family: "Montserrat";
   font-style: normal;
@@ -20,29 +24,87 @@
   color: #ff4e50;
   border: 2px solid #ff4e50;
   border-radius: 40px;
-  padding: 5px 12px 5px 12px;
+  padding: 5px 19px 5px 19px;
 }
-.meet-partner button:hover{
+.meet-partner button:hover {
   opacity: 0.8;
 }
 .celebrity-div {
-  display: grid;
-  grid-template-columns:repeat(5,auto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3rem;
 }
-.celebrity img {
-  width: 150px;
-  height: 150px;
+.celebrity {
+  width: 230px;
+}
+.loading-img {
+  background-color: #d8d8d8;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   transition: all ease 500ms;
-  border: 1px solid #ffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media(max-width:961px){
+.celebrity img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: all ease 500ms;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.celebrity h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #444444;
+  margin: 10px 0;
+  line-height: 17px;
+  text-align: center;
+}
+.celebrity p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: lighter;
+  opacity: 0.7;
+  font-size: 13px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+}
+@media (max-width: 961px) {
   .celebrity-div {
-    grid-template-columns:repeat(2,auto);
-   justify-content: center;
-   align-content: space-between;
-    /* margin:0 auto ; */
-    max-width:8000px; 
- }
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-content: space-between;
+    max-width: 8000px;
+  }
+  .celebrity {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 730px) {
+  .celebrity-div {
+    grid-template-columns: auto;
+  }
+  .celebrity img {
+    width: 140px;
+    height: 140px;
+  }
+  .celebrity {
+    margin: 10px 0;
+  }
+  .celebrity-div {
+    margin-bottom: 1rem;
+  }
+  .meet-partner {
+    margin: 2rem 0;
+  }
 }

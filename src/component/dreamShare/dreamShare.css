@@ -1,38 +1,57 @@
-.dream-share{
-margin-top:6rem;
+.dream-share {
+  margin-top: 4rem;
 }
-.dream-share h3{
-text-align: center;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-color: #444444;
+.dream-share h3 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #444444;
+  padding-bottom: 3rem;
 }
-.dream-share .movies{
-    display: flex;
-    justify-content: space-between;
+.dream-share .movies {
+  display: flex;
+  justify-content: space-between;
 }
 
 .dream-share .movie {
-    position: relative;
+  position: relative;
 }
 
-.dream-share .movie img, .dream-share .movie .content{
-    width:300px;
-    border-radius: 5px;
+.dream-share .movie img,
+.dream-share .movie .content {
+  width: 300px;
+  border-radius: 5px;
 }
 
-.dream-share .movie .content{
-    padding: 1rem;
-    position: absolute;
-    text-align: left;
-    bottom: 6px;
+.dream-share .movie .content {
+  padding: 1rem;
+  position: absolute;
+  text-align: left;
+  bottom: 6px;
 }
-.content p{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-color: #E3E3E3;
+.content p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #e3e3e3;
+}
+@media (max-width: 961px) {
+  .dream-share .movie img,
+  .dream-share .movie .content {
+    width: 250px;
+    padding: 10px;
+  }
+}
+@media (max-width: 730px) {
+  .dream-share .movies {
+    display: grid;
+  }
+  .dream-share .movie img,
+  .dream-share .movie .content {
+    width: 99%;
+    padding: 10px;
+  }
 }

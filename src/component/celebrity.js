@@ -32,7 +32,7 @@ module.exports = [
     {
         name: "Serena Williams",
         id: 6,
-        image: "https://th.bing.com/th/id/OIP.sLi6iUHHAPL5btrECoRq1wHaE8?pid=ImgDet&rs=1",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4F48H4tM7RjCO5uNklv8-1bMk85F0P5OcA&usqp=CAU",
         about:'She lives in the United States. Her hobbies are watching movies and football, reading ,acting, spending time with family and friends.'
     },
     {

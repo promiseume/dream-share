@@ -28,22 +28,22 @@ export default function HolidayIdeas() {
           <img src={MountainClimb} alt="Sports" />
           <p>Extreme Sports and Expeditions</p>
         </div>
-        <div className="holiday-content">
+        <div className="holiday-content games">
           <div className="opaque"></div>
           <img src={Card} alt="Games" />
           <p>Games</p>
         </div>
-        <div className="holiday-content">
+        <div className="holiday-content holiday-img">
           <div className="opaque"></div>
           <img src={Stadium} alt="Culture and Education" />
           <p>Culture and Education</p>
         </div>
-        <div className="holiday-content">
+        <div className="holiday-content holiday-img">
           <div className="opaque"></div>
           <img src={Massage} alt="Relaxation" />
           <p>Enjoyment and Relaxation</p>
         </div>
-        <div className="holiday-content">
+        <div className="holiday-content games">
           <div className="opaque"></div>
           <img src={Tour} alt="Travelling" />
           <p>Travelling</p>

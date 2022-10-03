@@ -8,7 +8,6 @@ import axios from "axios";
 
 function App() {
   const [movies, setMovies] = useState();
-  const [celebrity, setCelebrity] = useState();
 
   useEffect(() => {
     (async () => {
@@ -34,7 +33,6 @@ function App() {
 
         // const { data: movieData } = await axios.request(movieOptions);
         // setMovies(movieData.results.splice(2, 3));
-        
       } catch (error) {
         console.error(error);
       }
@@ -44,12 +42,11 @@ function App() {
     <>
       <Hero />
       <div className="container">
-        {console.log(celebrity)}
         <DreamShare movies={movies} />
         <MeetPartners />
         <HolidayIdeas />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
