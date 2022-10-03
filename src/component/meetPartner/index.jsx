@@ -8,7 +8,7 @@ export default function MeetPartner() {
   const [celebrities, setCelebrities] = useState(celebs.slice(start, end));
 
   const handleClick = () => {
-    if (start == 16) {
+    if (start === 16) {
       setStart(0);
       setEnd(4);
       setCelebrities(celebs.slice(start, end));
@@ -28,7 +28,16 @@ export default function MeetPartner() {
           return (
             <div className="celebrity" key={celebrity.id}>
               {celebrity.image ? (
-                <img src={celebrity.image} alt={celebrity.name} />
+                <div className="celebrity-pic">
+                  <img
+                    className="img"
+                    src={celebrity.image}
+                    alt={celebrity.name}
+                  />
+                  <div className="icon" style={{backgroundColor: celebrity.color}}>
+                    <img src={celebrity.icon} alt={celebrity.name} />
+                  </div>
+                </div>
               ) : (
                 <div className="loading-img">{celebrity.name}</div>
               )}

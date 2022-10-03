@@ -49,14 +49,37 @@
   margin-left: auto;
   margin-right: auto;
 }
-.celebrity img {
+.celebrity .celebrity-pic {
   width: 120px;
   height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.celebrity .img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   transition: all ease 500ms;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  object-fit: cover;
+}
+.celebrity .icon{
+  z-index:20;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.celebrity .icon img {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  object-fit: contain;
 }
 .celebrity h2 {
   font-family: "Montserrat";
@@ -94,10 +117,11 @@
   .celebrity-div {
     grid-template-columns: auto;
   }
-  .celebrity img {
+  .celebrity .celebrity-pic {
     width: 140px;
     height: 140px;
   }
+
   .celebrity {
     margin: 10px 0;
   }

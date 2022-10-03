@@ -31,8 +31,8 @@ function App() {
           },
         };
 
-        // const { data: movieData } = await axios.request(movieOptions);
-        // setMovies(movieData.results.splice(2, 3));
+        const { data: movieData } = await axios.request(movieOptions);
+        setMovies(movieData.results.splice(2, 3));
       } catch (error) {
         console.error(error);
       }
